@@ -24,17 +24,3 @@ char    *ft_code(int param, char *uncoded)
     return(uncoded);
 }
 
-/* int main(int argc, char *argv[])
-{
-    int strsize;
-    int param;
-    char *coded;
-    if (argc == 3)
-    {
-        param = ft_atoi(argv[2]);
-        //printf("%d\n", param);
-        coded = ft_code(param, argv[1]);
-        ft_putstr(coded);
-    }
-    return(0);
-} */
