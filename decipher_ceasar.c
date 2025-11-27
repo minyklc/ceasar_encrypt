@@ -1,21 +1,6 @@
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
+#include "utils.h"
 
-void    ft_putstr(char *str)
-{
-    int i;
-
-    i = 0;
-    while(str[i])
-    {
-        write(1, &str[i], 1);
-        i++;
-    }
-    write(1, "\n", 1);
-}
-
-char    *ft_code(char *uncoded)
+char    *ft_decode(char *uncoded)
 {
     int i;
 
@@ -34,7 +19,7 @@ char    *ft_code(char *uncoded)
     return(uncoded);
 }
 
-int main(int argc, char *argv[])
+/* int main(int argc, char *argv[])
 {
     int i;
     char *coded;
@@ -42,15 +27,19 @@ int main(int argc, char *argv[])
     i = 1;
     if (argc == 2)
     {
-        coded = ft_code(argv[1]);
+        coded = ft_decode(argv[1]);
         ft_putstr(coded);
         i++;
         while(i < 26)
         {
-            coded = ft_code(coded);
+            coded = ft_decode(coded);
             ft_putstr(coded);
             i++;
         }
     }
+    else
+    {
+
+    }
     return(0);
-}
+} */
